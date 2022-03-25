@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anmeldeformular</title>
+    <link rel="stylesheet" href="anmelde.css">
+</head>
+<body>
+    <div class="content">  
+    <h1>Anmeldeformular</h1>
+    <form action="anmeldung.php" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td >Firma:</td>
+              <td>
+                <input maxlength="50" name="Firma" size="45" type="text"/>
+              </td>
+            </tr>
+            <tr>
+              <td >Anrede:</td>
+              <td>
+                <select name="geschlecht"   required>
+                  <option value="0">Bitte wählen</option>
+                  <option value="m">Herr</option>
+                  <option value="f">Frau</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Vorname:</td>
+              <td>
+                <input maxlength="50" name="Vorname" size="45" type="text" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>Nachname:</td>
+              <td>
+                <input maxlength="50" name="Nachname" size="45" type="text" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Strasse:</td>
+              <td>
+                <input maxlength="50" name="Strasse" size="45" type="text" required />
+              </td>
+            </tr>
+            <tr>
+            <td>PLZ:</td>
+            <td>
+              <input maxlength="5" name="PLZ" size="7" type="text" required />
+            </td>
+            </tr>
+            <tr>
+              <td>Ort:</td>
+              <td>
+                <input maxlength="50" name="Ort" size="45" type="text" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Land:</td>
+              <td>
+                <input name="Land" size="45" type="text" required />
+              </td>
+            </tr>
+            <tr>
+                <td>Geburtsdatum:</td>
+                <td>
+                    <input type="date" name="gebi" required>
+                </td>
+            </tr>
+            <tr>
+              <td>Abteilung:</td>
+              <td>
+                <select name="Abteilung" required>
+                        <option value="LW">Landwirtschaft</option>
+                        <option value="FW">Forstwirtschaft</option>
+                        <option value="Me">Medizin</option>
+                        <option value="BIO">Biotechnologie</option>
+                        <option value="RM">Raumfahrt</option>
+                        <option value="Scha">Schaftechnik</option> 
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td >Email:</td>
+              <td>
+                <input maxlength="80" name="Email" size="45" type="text" required/>
+              </td>
+            </tr>
+            <tr>
+                <td>AGB:</td>
+                <td>
+                    <input type="checkbox" name="agb" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Bestätigen:</td>
+                <td>
+                    <input type="radio" name="Bestaetigt" value="j" size="45" required> Ja
+                    <input type="radio" name="Bestaetigt" value="n" size="45" required> Nein 
+                </td>
+            </tr>
+            <tr>
+                <td>Weitere Informationen:</td>
+                <td>
+                    <textarea name="info" cols="34" rows="5">
+
+                    </textarea>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="submit">
+        <input type="reset">
+        </form>
+    </div>
+</body>
+</html>

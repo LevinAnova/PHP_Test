@@ -1,0 +1,15 @@
+body {
+    background-image: url("https://media1.giphy.com/media/l0HlSNOxJB956qwfK/giphy.gif");
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  .content {
+    background-color: azure;
+    max-width: 500px;
+    margin: auto;
+    
+      
+  }
